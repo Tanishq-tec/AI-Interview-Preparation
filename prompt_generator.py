@@ -32,6 +32,7 @@ INSTRUCTIONS
    - "Feel free to ask"
    - "Let me know if you want more"
    - 'Any closing encouragement or suggestions'
+12.Give Brief Explanations for each section.
 =========================
 HARD OUTPUT RULES (MUST FOLLOW)
 =========================
@@ -60,4 +61,5 @@ HARD OUTPUT RULES (MUST FOLLOW)
 ''',
 input_variables=['job_role','experience','interview_type','skill_focus']
 )
+
 template.save('template.json')
