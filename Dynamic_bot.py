@@ -6,7 +6,6 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-# ✅ Single model initialization (THIS IS ENOUGH)
 llm = ChatOpenAI(
     model="mistralai/ministral-8b-2512",
     temperature=0.7,
@@ -57,6 +56,7 @@ prompt_input = {
 }
 
 if st.button("Start Interview Prep"):
-    chain = template | llm | parser   # ✅ use llm directly
+    chain = template | llm | parser  
     recommendation = chain.invoke(prompt_input)
     st.write(recommendation.replace("<br>", "\n"))
+
